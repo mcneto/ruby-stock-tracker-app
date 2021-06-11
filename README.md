@@ -1,14 +1,13 @@
-[![Build Status](CI_BADGE_URL goes here)](REPO_URL goes here)
+## Google Search Ruby IC
 
-## Introduction
-
-> *App introduction goes here ...*
+> A web application project for an Internal Certification with Nimble.
 
 ## Project Setup
 
 ### Prerequisites
 
 - Ruby version: 2.7.2
+- Rails version: 6.1.3.1
 - Node version: 14.15.4
 
 ### Docker
