@@ -120,3 +120,15 @@ rspec [rspec-params]
 
 - Create a [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
 from bot account with `public_repo` scope, and set it as `DANGER_GITHUB_API_TOKEN` secret on the CI Environment Settings.
+
+## About
+
+![Nimble](https://assets.nimblehq.co/logo/dark/logo-dark-text-160.png)
+
+This project is maintained and funded by Nimble.
+
+We love open source and do our part in sharing our work with the community!
+See [our other projects][community] or [hire our team][hire] to help build your product.
+
+[community]: https://github.com/nimblehq
+[hire]: https://nimblehq.co/
