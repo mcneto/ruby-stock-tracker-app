@@ -14,5 +14,3 @@ Rails.backtrace_cleaner.remove_silencers!
 Rails.backtrace_cleaner.add_silencer do |line|
   !(Rails::BacktraceCleaner::APP_DIRS_PATTERN.match?(line) || /^engines/.match?(line))
 end
-
-
