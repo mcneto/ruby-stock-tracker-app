@@ -29,7 +29,7 @@ module GoogleSearchIc
     # config.eager_load_paths << Rails.root.join("extras")
 
     # Set the queuing backend to `Sidekiq`
-    # 
+    #
     # Be sure to have the adapter's gem in your Gemfile
     # and follow the adapter's specific installation
     # and deployment instructions.
