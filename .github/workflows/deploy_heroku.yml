@@ -5,6 +5,7 @@ on:
     workflows:
       - Test
     branches:
+      - main
       - develop
       - chore/setup-cd
     types:
