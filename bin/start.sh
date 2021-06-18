@@ -9,4 +9,4 @@ fi
 
 # Run pending migrations (if any) and start rails
 bundle exec rails db:migrate
-bundle exec rails s -p 3000 -b 0.0.0.0
+bundle exec rails s -p $PORT -b 0.0.0.0
