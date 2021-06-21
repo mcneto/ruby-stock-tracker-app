@@ -22,7 +22,7 @@ eslint.lint
 slim_lint.lint
 
 # Report your Ruby app test suite code coverage in Danger.
-simplecov.report 'coverage/coverage.json'
+# simplecov.report 'coverage/coverage.json'
 
 # Report missing test coverage of new changes in Danger
-undercover.report
+# undercover.report
