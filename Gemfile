@@ -21,6 +21,7 @@ gem 'pundit' # Minimal authorization through OO design and pure Ruby classes
 # Assets
 gem 'webpacker', '~>5.2.0' # Transpile app-like JavaScript
 gem 'sass-rails' # SASS
+gem 'font-awesome-sass', '~> 5.15.1' # Font Awesome for Rails
 
 # Templating
 gem 'slim' # light weight template engine
