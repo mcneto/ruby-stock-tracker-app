@@ -30,20 +30,5 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  activerecord:
-    errors:
-      models:
-        user:
-          attributes:
-            email:
-              blank: "must be given please"
-              taken: "has already been taken"
-            password:
-              blank: "must be given please"
-            password_confirmation:
-              blank: "must be given please"
-            first_name:
-              blank: "must be given please"
-            last_name:
-              blank: "must be given please"
-
+  hello: "Hello world"
+  
