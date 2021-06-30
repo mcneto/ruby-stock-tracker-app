@@ -11,10 +11,10 @@
   </head>
 
   <body>
-    <%= render 'pages/header' %>
+    <%= render 'shared/header' %>
     <div class="container mt-3">
       <% if notice %>
-        <%= render 'layouts/alerts' %>
+        <%= render 'shared/alerts' %>
       <% end %>
 
       <%= yield %>
