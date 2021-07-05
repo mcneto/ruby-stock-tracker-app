@@ -9,13 +9,13 @@
   &__header {
     @extend .card-header;
 
+    color: $white;
     text-align: center;
-    color: white;
     background-color: $dark;
   }
-  &__footer{
+  &__footer {
     width: 40%;
+    padding-top: 20px;
     margin: auto;
-    padding-top: 20px
   }
 }

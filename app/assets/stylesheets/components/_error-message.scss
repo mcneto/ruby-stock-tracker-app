@@ -1,14 +1,14 @@
 .error-message {
   @extend .card;
 
-  border-color: $danger;
   margin-bottom: 1rem;
+  border-color: $danger;
 
   &__header {
     @extend .card-header;
 
     height: 2.5rem;
-    color: white;
+    color: $white;
     background-color: $danger;
   }
 
