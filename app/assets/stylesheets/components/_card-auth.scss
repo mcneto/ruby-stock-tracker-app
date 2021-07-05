@@ -6,17 +6,16 @@
   margin-top: 30px;
   border-color: $secondary;
 
-  &-header {
+  &__header {
     @extend .card-header;
 
     text-align: center;
     color: white;
     background-color: $dark;
   }
-}
-
-.link-bottom {
-  width: 40%;
-  margin: auto;
-  padding-top: 20px
+  &__footer{
+    width: 40%;
+    margin: auto;
+    padding-top: 20px
+  }
 }

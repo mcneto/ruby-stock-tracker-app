@@ -4,7 +4,7 @@
   border-color: $danger;
   margin-bottom: 1rem;
 
-  &-header {
+  &__header {
     @extend .card-header;
 
     height: 2.5rem;

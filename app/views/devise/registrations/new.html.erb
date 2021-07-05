@@ -1,13 +1,13 @@
 <div class="card-auth">
-  <div class="card-auth-header">
+  <div class="card-auth__header">
     <h2>Register</h2>
   </div>
 
   <div class="card-body">
-    <%= render 'devise/shared/register_form' %>
+    <%= render 'devise/shared/register_form', :minimum_password_length => @minimum_password_length %>
   </div>
 </div>
 
-<div class="link-bottom">
+<div class="card-auth__footer">
   <%= render 'devise/shared/links' %>
 </div>
