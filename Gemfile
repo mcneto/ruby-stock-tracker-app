@@ -84,6 +84,7 @@ group :test do
   gem 'vcr' # Gem for recording test suite's HTTP interactions
   gem 'timecop' # Gem for time travel
   gem 'rails-controller-testing' # Gem that allow to use assigns as well ass assert_template
+  gem 'factory_bot_rails' # Allow to create an object or a collection of objects with predefined sets of values for tests
 end
 
 group :production do
