@@ -3,6 +3,32 @@
 require 'rails_helper'
 
 describe 'Registration', type: :system do
+  context 'when visit register page' do
+    before(:each) do
+      visit new_user_registration_path
+    end
+
+    it 'displays the first name field' do
+      expect(page).to have_field('First Name')
+    end
+
+    it 'displays the last name field' do
+      expect(page).to have_field('Last Name')
+    end
+
+    it 'displays the email field' do
+      expect(page).to have_field('Email')
+    end
+
+    it 'displays the password field' do
+      expect(page).to have_field('Password')
+    end
+
+    it 'displays the password confirmation field' do
+      expect(page).to have_field 'Password Confirmation'
+    end
+  end
+
   context 'given the valid inputs' do
     it 'displays successful register message' do
       sign_up_user 'test@example.com', 'test1234', 'test1234'
