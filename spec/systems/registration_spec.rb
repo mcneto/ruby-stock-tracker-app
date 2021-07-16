@@ -19,7 +19,7 @@ describe 'Registration', type: :system do
     it 'does not create a new user' do
       visit new_user_registration_path
 
-      click_button 'Sign up'
+      click_button 'Create an Account'
       expect(User.count).to eq(0)   # equal 1 when new user was created
     end
   end
@@ -34,14 +34,14 @@ describe 'Registration', type: :system do
   context 'given an invalid password input' do
     it 'displays an error message' do
       sign_up_user 'test@example.com', 'test1', 'test1'
-      expect(find('form')).to have_selector('div#error_explanation')
+      expect(find('form')).to have_selector('.error-message')
     end
   end
 
   context 'given a wrong password confirmation ' do
     it 'displays an error message' do
       sign_up_user 'test@example.com', 'test1234', 'test1246'
-      expect(find('form')).to have_selector('div#error_explanation')
+      expect(find('form')).to have_selector('.error-message')
     end
   end
 end
