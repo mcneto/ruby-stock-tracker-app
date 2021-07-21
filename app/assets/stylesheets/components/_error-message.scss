@@ -1,7 +1,7 @@
 .error-message {
   @extend .card;
 
-  margin-bottom: 1rem;
+  margin-bottom: rem(1px);
   border-color: $danger;
 
   &__header {

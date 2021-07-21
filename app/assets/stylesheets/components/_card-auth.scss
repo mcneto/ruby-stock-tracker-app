@@ -3,7 +3,7 @@
 
   width: 45%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: rem(30px);
   border-color: $secondary;
 
   &__header {
@@ -15,7 +15,7 @@
   }
   &__footer {
     width: 40%;
-    padding-top: 20px;
+    padding-top: rem(20px);
     margin: auto;
   }
 }
