@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 describe 'Registration', type: :system do
-  context 'when visit register page' do
+  context 'given the registration page is visited' do
     before(:each) do
       visit new_user_registration_path
     end
