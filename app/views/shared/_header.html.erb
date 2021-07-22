@@ -10,9 +10,13 @@
       <ul class="navbar-nav">
       </ul>
       <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <%= link_to 'Register', new_user_registration_path, class: "nav-link" %>
-          </li>
+        <li class="nav-item">
+          <%= link_to 'Register', new_user_registration_path, class: "nav-link" %>
+        </li>
+
+        <li class="nav-item ml-auto">
+          <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "nav-link" %>
+        </li>
       </ul>
     </div>
   </div>
