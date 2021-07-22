@@ -12,12 +12,14 @@ module AuthHelpers
   end
 
   def sign_in_user
-    # Before each test, create and login the user
-    before(:each) do
-      @request.env['devise.mapping'] = Devise.mappings[:user]
-      user = FactoryBot.create(:user)
-      sign_in user
-    end
+    @request.env['devise.mapping'] = Devise.mappings[:user]
+    user = FactoryBot.create(:user)
+    sign_in(user)
+  end
+
+  def login
+    user = FactoryBot.create(:user)
+    sign_in(user)
   end
 
   def sign_up_user(email, password, confirmation)
@@ -30,5 +32,9 @@ module AuthHelpers
     fill_in :user_password_confirmation, with: confirmation
 
     click_button 'Create an Account'
+  end
+
+  RSpec.configure do |config|
+    config.include Devise::Test::IntegrationHelpers, type: :system
   end
 end
