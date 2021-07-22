@@ -22,7 +22,7 @@ RSpec.configure do |config|
 
   config.include Rails.application.routes.url_helpers
 
-  config.include Devise::Test::IntegrationHelpers, type: :system
-
+  config.include Devise::Test::IntegrationHelpers, type: %i[system controller]
   config.include AuthHelpers
+  config.extend AuthHelpers, type: :controller
 end
