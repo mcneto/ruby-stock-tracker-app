@@ -3,6 +3,7 @@
 
 // Dependencies
 @import 'vendor/bootstrap/bootstrap';
+@import 'vendor/font_awesome';
 
 // Functions
 @import 'functions/sizing';
@@ -14,5 +15,8 @@
 // Layouts
 
 // Components
+@import 'components/card-auth';
+@import 'components/error-message';
+@import 'components/link-auth';
 
 // Screens

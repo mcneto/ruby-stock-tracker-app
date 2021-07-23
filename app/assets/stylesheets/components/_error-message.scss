@@ -1,0 +1,26 @@
+.error-message {
+  @extend .card;
+
+  margin-bottom: rem(13px);
+  border-color: $danger;
+
+  &__header {
+    @extend .card-header;
+
+    height: rem(40px);
+    color: $white;
+    background-color: $danger;
+  }
+
+  h4 {
+    margin-top: rem(-5px);
+
+    i {
+      font-size: rem(18px);
+    }
+  }
+
+  ul {
+    padding-top: rem(10px);
+  }
+}

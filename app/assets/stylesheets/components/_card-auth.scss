@@ -1,0 +1,21 @@
+.card-auth {
+  @extend .card;
+
+  width: 45%;
+  margin: auto;
+  margin-top: rem(30px);
+  border-color: $secondary;
+
+  &__header {
+    @extend .card-header;
+
+    color: $white;
+    text-align: center;
+    background-color: $dark;
+  }
+  &__footer {
+    width: 40%;
+    padding-top: rem(20px);
+    margin: auto;
+  }
+}

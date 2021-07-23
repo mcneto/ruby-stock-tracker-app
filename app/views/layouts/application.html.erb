@@ -11,8 +11,13 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <%= render 'shared/header' %>
+    <div class="container mt-3">
+      <% if notice %>
+        <%= render 'shared/alerts' %>
+      <% end %>
+
+      <%= yield %>
+    </div>
   </body>
 </html>
