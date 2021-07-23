@@ -7,7 +7,7 @@ describe PagesController, type: :controller do
     context 'given unauthorized user tries to access the main page' do
       it 'redirects to the sign-in page' do
         get :index
-        expect(response).to have_http_status(:redirect)
+        expect(response).to redirect_to(:new_user_session)
       end
     end
 
