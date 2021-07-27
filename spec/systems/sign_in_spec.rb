@@ -9,7 +9,7 @@ describe 'Sign in', type: :system do
       expect(page).to have_content 'Signed in successfully.'
     end
 
-    it 'redirect to the main screen' do
+    it 'redirects to the main screen' do
       sign_in_ui
       expect(page).to have_current_path(root_path)
     end
