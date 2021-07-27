@@ -26,14 +26,16 @@ describe 'Sign in', type: :system do
 
   context 'given an invalid email input' do
     it 'does not redirect to the main screen' do
-      sign_in_ui 'test@example', ''
+      user = build(:user, email: 'test@example')
+      sign_in_ui user
       expect(page).to have_current_path(new_user_session_path)
     end
   end
 
   context 'given an invalid password input' do
     it 'does not redirect to the main screen' do
-      sign_in_ui '', 'test12'
+      user = build(:user, password: 'test12')
+      sign_in_ui user
       expect(page).to have_current_path(new_user_session_path)
     end
   end

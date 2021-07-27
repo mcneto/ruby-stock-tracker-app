@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 module AuthHelpers
-  def sign_in_ui(email = nil, password = nil)
-    user = FactoryBot.create(:user)
+  def sign_in_ui(user = nil)
+    user ||= FactoryBot.create(:user)
     visit root_path
 
-    fill_in :user_email, with: email || user.email
-    fill_in :user_password, with: password || user.password
+    fill_in :user_email, with: user.email
+    fill_in :user_password, with: user.password
 
     click_button 'Log in'
   end
