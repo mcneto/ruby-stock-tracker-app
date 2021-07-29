@@ -33,8 +33,4 @@ module AuthHelpers
 
     click_button 'Create an Account'
   end
-
-  RSpec.configure do |config|
-    config.include Devise::Test::IntegrationHelpers, type: :system
-  end
 end
