@@ -17,7 +17,7 @@ describe 'Sign in', type: :system do
 
   context 'given no inputs' do
     it 'does not redirect to the main screen' do
-      visit root_path
+      visit new_user_session_path
 
       click_button 'Log in'
       expect(page).to have_current_path(new_user_session_path)
