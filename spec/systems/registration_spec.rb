@@ -46,14 +46,14 @@ describe 'Registration', type: :system do
       visit new_user_registration_path
 
       click_button 'Create an Account'
-      expect(User.count).to eq(0)   # equal 1 when new user was created
+      expect(User.count).to eq(0) # equal 1 when new user was created
     end
   end
 
   context 'given an invalid email input' do
     it 'does not create a new user' do
       sign_up_user 'test.com', 'test1234', 'test1234'
-      expect(User.count).to eq(0)   # equal 1 when new user was created
+      expect(User.count).to eq(0) # equal 1 when new user was created
     end
   end
 

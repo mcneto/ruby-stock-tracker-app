@@ -9,7 +9,6 @@ gem 'mini_magick' # A ruby wrapper for ImageMagick or GraphicsMagick command lin
 gem 'pagy' # A pagination gem that is very light and fast
 gem 'paranoia' # Paranoia is a re-implementation of acts_as_paranoid for Rails 3 and Rails 4. Soft-deletion of records
 gem 'ffaker' # A library for generating fake data such as names, addresses, and phone numbers.
-gem 'fabrication' # Fabrication generates objects in Ruby. Fabricators are schematics for your objects, and can be created as needed anywhere in your app or specs.
 gem 'sidekiq' # background processing for Ruby
 gem 'bootsnap', require: false # Reduces boot times through caching; required in config/boot.rb
 gem 'i18n-js', '3.5.1' # A library to provide the I18n translations on the Javascript
