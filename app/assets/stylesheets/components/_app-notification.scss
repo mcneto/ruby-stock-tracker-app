@@ -1,0 +1,19 @@
+.app-notification {
+  @extend .alert;
+
+  width: fit-content;
+  margin: auto;
+  min-width: 45%;
+
+  &--alert {
+    @extend .app-notification;
+    @extend .alert-danger;
+  }
+
+  &--notice {
+    @extend .app-notification;
+    @extend .alert-primary;
+
+    min-width: 80%;
+  }
+}
