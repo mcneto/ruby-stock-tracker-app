@@ -2,8 +2,8 @@
   @extend .alert;
 
   width: fit-content;
-  margin: auto;
   min-width: 45%;
+  margin: auto;
 
   &--alert {
     @extend .app-notification;
@@ -13,6 +13,7 @@
   &--notice {
     @extend .app-notification;
     @extend .alert-primary;
+    @extend .alert-dismissible;
 
     min-width: 80%;
   }
