@@ -3,6 +3,7 @@
 module AuthHelpers
   def sign_in_ui(user = nil)
     user ||= FactoryBot.create(:user)
+
     visit new_user_session_path
 
     fill_in :user_email, with: user.email
