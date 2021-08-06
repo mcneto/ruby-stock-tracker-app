@@ -3,14 +3,12 @@
 require 'rails_helper'
 
 describe 'Sign in', type: :system do
-  context 'given the navigation bar' do
+  context 'given the sign-in page is visited' do
     it 'displays the sign-in link' do
       visit new_user_session_path
       expect(find('nav')).to have_link('Sign In')
     end
-  end
 
-  context 'given the sign-in page is visited' do
     it 'displays the email field' do
       visit new_user_session_path
       expect(page).to have_field('Email')
