@@ -3,6 +3,23 @@
 require 'rails_helper'
 
 describe 'Sign in', type: :system do
+  context 'given the sign-in page is visited' do
+    it 'displays the sign-in link' do
+      visit new_user_session_path
+      expect(find('nav')).to have_link('Sign In')
+    end
+
+    it 'displays the email field' do
+      visit new_user_session_path
+      expect(page).to have_field('Email')
+    end
+
+    it 'displays the password field' do
+      visit new_user_session_path
+      expect(page).to have_field('Password')
+    end
+  end
+
   context 'given valid credentials' do
     it 'displays successful sign in message' do
       sign_in_ui

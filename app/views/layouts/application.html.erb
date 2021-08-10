@@ -14,6 +14,8 @@
     <%= render 'shared/header' %>
     <div class="container mt-3">
       <% if notice %>
+        <%= render 'shared/notices' %>
+      <% elsif alert %>
         <%= render 'shared/alerts' %>
       <% end %>
 

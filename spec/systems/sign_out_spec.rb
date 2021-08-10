@@ -3,6 +3,14 @@
 require 'rails_helper'
 
 describe 'Sign out', type: :system do
+  context 'given the navigation bar' do
+    it 'displays the sign-out link' do
+      login
+      visit root_path
+      expect(find('nav')).to have_link('Sign Out')
+    end
+  end
+
   context 'given the sign-out link is clicked' do
     it 'redirect to the sign-in page' do
       login
