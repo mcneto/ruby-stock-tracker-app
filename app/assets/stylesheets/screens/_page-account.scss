@@ -1,0 +1,44 @@
+.page-account {
+  @extend .jumbotron;
+
+  padding-top: rem(22px);
+  padding-bottom: rem(22px);
+  margin-top: rem(8px);
+  color: $dark;
+  background-color: $light;
+
+  hr {
+    margin-top: rem(20px);
+    margin-bottom: rem(25px);
+  }
+
+  &__title {
+    margin-top: rem(30px);
+  }
+
+  &__main {
+    @extend .page-account;
+
+    width: 60%;
+  }
+
+  &__side {
+    @extend .page-account;
+
+    width: rem(300px);
+    height: rem(220px);
+  }
+
+  &__bottom {
+    @extend .card;
+
+    max-height: rem(180px);
+    margin-bottom: rem(15px);
+    color: $success;
+    border-color: $success;
+  }
+
+  &__footer {
+    margin-top: rem(30px);
+  }
+}

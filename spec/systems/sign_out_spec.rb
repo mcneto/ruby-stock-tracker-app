@@ -7,6 +7,7 @@ describe 'Sign out', type: :system do
     it 'displays the sign-out link' do
       login
       visit root_path
+
       expect(find('nav')).to have_link('Sign Out')
     end
   end
@@ -15,6 +16,7 @@ describe 'Sign out', type: :system do
     it 'redirect to the sign-in page' do
       login
       visit root_path
+
       click_link 'Sign Out'
       expect(page).to have_current_path(new_user_session_path)
     end
