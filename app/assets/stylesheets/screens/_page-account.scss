@@ -12,6 +12,10 @@
     margin-bottom: rem(25px);
   }
 
+  &__title {
+    margin-top: rem(30px);
+  }
+
   &__main {
     @extend .page-account;
 
@@ -35,10 +39,6 @@
   }
 
   &__footer {
-    margin-top: rem(30px);
-  }
-
-  &__title {
     margin-top: rem(30px);
   }
 }
