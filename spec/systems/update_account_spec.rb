@@ -27,7 +27,7 @@ describe 'Update account', type: :system do
     end
   end
 
-  context 'given an correct current password' do
+  context 'given a valid current password' do
     it 'display successfully updated message' do
       user = build(:user, first_name: 'Example', last_name: 'Test', email: 'test123@example.com')
       update_account user, 'test1111'
@@ -35,7 +35,7 @@ describe 'Update account', type: :system do
       expect(page).to have_content 'Your account has been updated successfully.'
     end
 
-    it 'does update the account' do
+    it 'update the account' do
       user = build(:user, first_name: 'Example')
       update_account user
       visit edit_user_registration_path
