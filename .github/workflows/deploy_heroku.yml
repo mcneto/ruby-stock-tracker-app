@@ -1,15 +1,6 @@
 name: Deploy Heroku
 
-on:
-  workflow_run:
-    workflows:
-      - Test
-    branches:
-      - main
-      - develop
-    types:
-      - completed
-  workflow_dispatch:
+on: push
 
 env:
   DOCKER_REGISTRY_HOST: ${{ secrets.DOCKER_REGISTRY_HOST }}
@@ -41,9 +32,9 @@ jobs:
         run: |
           if [[ $BRANCH_TAG = "latest" ]]
           then
-            echo "HEROKU_APP=google-search-ic" >> $GITHUB_ENV
+            echo "HEROKU_APP=ruby-stock-tracker-app" >> $GITHUB_ENV
           else
-            echo "HEROKU_APP=google-search-ic-staging" >> $GITHUB_ENV
+            echo "HEROKU_APP=ruby-stock-tracker-app-staging" >> $GITHUB_ENV
           fi
 
       - name: Login to Docker registry
